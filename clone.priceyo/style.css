@@ -1,0 +1,292 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.img {
+  width: 150px;
+}
+
+.searchbar {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button1, .button2 {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffb300;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button1:hover, .button2:hover {
+  background-color: #ffa000;
+}
+
+.inpt {
+  display: flex;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: #fffbe7;
+}
+
+.mobiles {
+  text-align: center;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.imgs {
+  width: 60px;
+  height: auto;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Product Cards */
+.center {
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.items {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.items:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buds {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.price {
+  color: #28a745;
+  font-size: 18px;
+}
+
+.off {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: gray;
+  gap: 10px;
+}
+
+.pricecut {
+  text-decoration: line-through;
+}
+
+.saving {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Static Banner */
+.poster {
+  width: 100%;
+  margin: 30px 0;
+}
+
+/* Products Section */
+.container {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left, .middle, .right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.picpro, .imagebox1 {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.off1, .mobsale {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.pricecut1, .Rs {
+  text-decoration: line-through;
+}
+
+.saving1, .save {
+  color: #c62828;
+  font-weight: bold;
+}
+
+/* Reason to Buy Section */
+.containerRTB {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+.Rtitle h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.middlebox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.firstleft, .secondright {
+  flex: 1;
+  min-width: 250px;
+}
+
+.leftup, .leftdown, .secondrightup, .secondrightdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail1 img, .detail3 img, .detail5 img, .detail7 img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.knowbtn button {
+  background-color: #ffb300;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 30px;
+}
+
+.footer .first, .footer .second, .footer .third {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer img {
+  width: 150px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.footer ul li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}
+
+.lower {
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.lower .icons i {
+  color: white;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.lower .icons i:hover {
+  color: #ffb300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header, .navbar, .footer, .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchbar {
+    width: 80%;
+  }
+
+  .items {
+    width: 45%;
+  }
+
+  .left, .middle, .right {
+    width: 100%;
+  }
+}
